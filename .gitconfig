@@ -1,3 +1,16 @@
+[color]
+    ui = true
+
 [alias]
-st = status
-ci = commit -v
+    st = status
+    ci = commit -v
+
+[merge]
+    tool = meld
+    conflictstyle = diff3
+
+[mergetool "meld"]
+    cmd = meld $LOCAL $BASE $REMOTE $MERGED
+
+[diff]
+    tool = meld
